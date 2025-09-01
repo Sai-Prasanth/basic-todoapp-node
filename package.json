@@ -1,0 +1,20 @@
+{
+  "name": "basic-todoapp-node",
+  "version": "1.0.0",
+  "description": "A simple TODO CLI app built with Node.js and TypeScript.",
+  "main": "dist/todo.js",
+  "scripts": {
+  "start": "ts-node src/todo.ts",
+    "build": "tsc",
+    "start:prod": "node dist/todo.js" 
+   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
