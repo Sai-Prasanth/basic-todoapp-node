@@ -4,17 +4,27 @@
   "description": "A simple TODO CLI app built with Node.js and TypeScript.",
   "main": "dist/todo.js",
   "scripts": {
-  "start": "ts-node src/todo.ts",
+    "start": "ts-node src/todo.ts",
     "build": "tsc",
-    "start:prod": "node dist/todo.js" 
-   },
+    "start:prod": "node dist/todo.js"
+  },
+  "bin": {
+    "todo": "./dist/todo.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/node": "^24.3.0",
+    "chrono-node": "^2.8.4",
+    "node-notifier": "^10.0.1",
     "nodemon": "^3.1.10",
+    "play-sound": "^1.1.6",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/node-notifier": "^8.0.5",
+    "@types/play-sound": "^1.1.2"
   }
 }
